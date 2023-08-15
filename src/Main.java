@@ -23,17 +23,16 @@ public class Main {
         Bootcamp bt1 = new Bootcamp();
         bt1.setNome("Bootfoda");
 
-        bt1.getConteudosInclusos().add(curso1);
+        bt1.getConteudosInclusos().add(curso1);bt1.getConteudosInclusos().add(mentoria1);
+
 
 
         Dev rod = new Dev("Rodrigo");
         rod.inscreverBootcamp(bt1);
+        rod.progredir(mentoria1);
+        rod.progredir(curso1);
 
-        System.out.println(curso1);
-        System.out.println(mentoria1);
-        System.out.println(bt1);
-        System.out.println(rod.getXp());
-
+        System.out.println(rod);
 
     }
 }
